@@ -1,0 +1,98 @@
+$section-name: 'popular-vacancy';
+
+.#{$section-name} {
+  margin-inline: auto;
+  max-width: 1600px;
+  border-radius: 48px;
+  padding-block: 100px;
+  background-color: #f3f4f6;
+
+  &__container {
+    margin-inline: auto;
+    max-width: 1230px;
+    padding-inline: 15px;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+
+  }
+
+  &__controls {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.25;
+    color: var(--color-text);
+  }
+
+  &__all {
+    &-vacancy {
+      text-align: center;
+
+      & .button--primary {
+        height: 52px;
+        padding: 14px 24px;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__slider {
+    padding-bottom: 60px;
+  }
+
+  &__slide {
+    width: auto ;
+  }
+}
+
+@media (max-width: 1600px) {
+  .#{$section-name} {
+    border-radius: 32px;
+    padding-block: 70px;
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__slider {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 1230px) {
+  .#{$section-name} {
+    &__slider {
+      margin-right: -15px;
+    }
+  }  
+}
+
+@media (max-width: 767px) {
+  .#{$section-name} {
+  }
+}
+
+@media (max-width: 360px) {
+  .#{$section-name} {
+    &__all {
+      &-vacancy {
+        text-align: center;
+  
+        & .button--primary {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

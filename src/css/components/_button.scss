@@ -1,0 +1,130 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 8px 12px;
+  height: 36px;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--color-gray);
+  border: 0;
+  background-color: var(--color-gray-light);
+  border: 1px solid var(--color-gray-dark);
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &[disabled],
+  &[disabled="disabled"],
+  &:disabled,
+  &--disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+  }
+
+  &--primary {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+
+    &[disabled],
+    &[disabled="disabled"],
+    &:disabled,
+    &--disabled {
+      pointer-events: none;
+      cursor: default;
+      opacity: 0.5;
+    }
+  
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: var(--color-primary-hover);
+        border: 1px solid var(--color-primary-hover);
+      }
+  
+      &:active {
+        background-color: var(--color-primary-hover);
+        border: 1px solid var(--color-primary-hover);
+      }
+    }
+  
+    @media (any-hover: none) {
+      &:active {
+        background-color: var(--color-primary-hover);
+        border: 1px solid var(--color-primary-hover);
+      }
+    }
+  }
+
+  &--secondary {
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+
+    &[disabled],
+    &[disabled="disabled"],
+    &:disabled,
+    &--disabled {
+      pointer-events: none;
+      cursor: default;
+      opacity: 0.5;
+    }
+  
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: var(--color-secondary-hover);
+        border: 1px solid var(--color-secondary-hover);
+      }
+  
+      &:active {
+        background-color: var(--color-secondary-hover);
+        border: 1px solid var(--color-secondary-hover);
+      }
+    }
+  
+    @media (any-hover: none) {
+      &:active {
+        background-color: var(--color-secondary-hover);
+        border: 1px solid var(--color-secondary-hover);
+      }
+    }
+  }  
+
+  &--square {
+    padding: 10px;
+    height: 42px;
+    width: 42px;
+    background-color: var(--color-white);  
+
+    &[disabled],
+    &[disabled="disabled"],
+    &:disabled,
+    &--disabled {
+      opacity: 0.8;
+      pointer-events: none;
+      cursor: default;
+      background-color: var(--color-gray-light);      
+    }
+
+    transition: all 0.3s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        box-shadow: 0 10px 10px 0 rgba(49, 65, 88, 0.04), 0 20px 25px -5px rgba(49, 65, 88, 0.1);
+      }
+  
+      &:active {
+        box-shadow: 0 10px 10px 0 rgba(49, 65, 88, 0.04), 0 20px 25px -5px rgba(49, 65, 88, 0.1);
+      }
+    }
+  
+    @media (any-hover: none) {
+      &:active {
+        box-shadow: 0 10px 10px 0 rgba(49, 65, 88, 0.04), 0 20px 25px -5px rgba(49, 65, 88, 0.1);
+      }
+    }
+  }
+}

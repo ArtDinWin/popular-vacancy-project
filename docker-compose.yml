@@ -1,0 +1,9 @@
+services:
+  nginx:
+    image: nginx:stable-alpine
+    container_name: popular-vacancy-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./dist:/usr/share/nginx/html
+    restart: unless-stopped

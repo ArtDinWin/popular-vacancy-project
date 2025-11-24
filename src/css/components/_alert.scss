@@ -1,0 +1,21 @@
+$section-name: 'success-alert';
+
+.#{$section-name} {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-success);
+  color: var(--color-white);
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  z-index: 10000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  animation: fadeInOut 2s ease-in-out;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+

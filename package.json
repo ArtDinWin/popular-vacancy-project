@@ -1,0 +1,19 @@
+{
+  "name": "popular-vacancy-project",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": "^23.0.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.94.2",
+    "vite": "^7.2.4"
+  }
+}
