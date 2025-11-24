@@ -1,5 +1,5 @@
 # Popular Vacancy Project
-
+![Preview](https://github.com/ArtDinWin/popular-vacancy-project/blob/main/dist/images/preview.jpg)
 Популярные вакансии - секция-слайдер. Создан на стеке: Vite, SCSS и запускается в Docker через Nginx.
 
 ## 🚀 Запуск приложения
